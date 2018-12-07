@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="psantaniello.view.ReportsScreenController">
+  <tabs>
+    <Tab fx:id="schedTab" text="Current Schedule">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="schedTableview" prefHeight="370.0" prefWidth="600.0">
+                     <columns>
+                        <TableColumn fx:id="startSchedColumn" prefWidth="110.0" text="Start" />
+                        <TableColumn fx:id="endSchedColumn" prefWidth="110.0" text="End" />
+                        <TableColumn fx:id="titleSchedColumn" prefWidth="105.0" text="Title" />
+                        <TableColumn fx:id="descrSchedColumn" prefWidth="100.0" text="Description" />
+                        <TableColumn fx:id="custSchedColumn" prefWidth="175.0" text="Customer" />
+                     </columns>
+                  </TableView>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="apptTab" text="No. Appointments (by Month)">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TableView fx:id="apptTableview" prefHeight="370.0" prefWidth="600.0">
+                    <columns>
+                      <TableColumn fx:id="monthApptColumn" prefWidth="150.0" text="Month" />
+                      <TableColumn fx:id="typeApptColumn" prefWidth="100.0" text="Type" />
+                        <TableColumn fx:id="totalApptColumn" prefWidth="150.0" text="Total" />
+                    </columns>
+                  </TableView>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab fx:id="custTab" text="No. of Customers (by Location)">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <PieChart fx:id="pieChart" layoutY="10.0" prefHeight="334.0" prefWidth="600.0" title="Customers by Location" />
+               </children>
+            </AnchorPane>
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

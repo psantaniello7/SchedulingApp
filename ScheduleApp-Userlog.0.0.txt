@@ -1,0 +1,12 @@
+Jul 09, 2018 12:26:39 AM psantaniello.view.LoginScreenController loginButtonHandler
+INFO: test logged in
+Jul 09, 2018 12:31:27 PM psantaniello.view.LoginScreenController loginButtonHandler
+INFO: test logged in
+Jul 09, 2018 12:33:06 PM psantaniello.view.LoginScreenController loginButtonHandler
+INFO: test logged in
+Jul 09, 2018 12:36:00 PM psantaniello.view.LoginScreenController loginButtonHandler
+INFO: test logged in
+Jul 09, 2018 12:36:21 PM psantaniello.view.LoginScreenController loginButtonHandler
+INFO: test logged in
+Jul 09, 2018 12:37:37 PM psantaniello.view.LoginScreenController loginButtonHandler
+INFO: test logged in
